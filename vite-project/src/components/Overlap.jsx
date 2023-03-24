@@ -40,13 +40,17 @@ const Overlap = () => {
                         <h3>Contact Us</h3>
                     </div>
                     <div className="social-info">
-                        <FaFacebook />
-                        <FaInstagram />
-                        <FaTwitter />
+                        <FaFacebook size={40}
+                            style={{ color: "#fff" }} />
+                        <FaInstagram size={40}
+                            style={{ color: "#fff" }} />
+                        <FaTwitter size={40}
+                            style={{ color: "#fff" }} />
                     </div>
                 </div>
                 <h4 className='h4'> &copy; Copyright 2023 Huddle. All rights reserved.</h4>
             </div>
+            <h5>Challenge by <a href="">frontendmentor.io</a> coded by <a href="">Ejiro Osiephri</a></h5>
         </div>
     )
 }
