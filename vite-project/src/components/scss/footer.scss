@@ -1,0 +1,99 @@
+@use "./NavBar" as u;
+
+.footer-container {
+  background-color: u.$Very-Dark-Cyan;
+  //   position: relative;
+}
+.footer {
+  width: 100%;
+  margin: 0 0 1em;
+  padding: 5em 2em;
+  color: white;
+}
+.about-me {
+  width: 100%;
+}
+.location {
+  display: block;
+  margin: 25px 0;
+}
+
+.phone {
+  margin: 25px 0;
+}
+.mail {
+  margin: 25px 0;
+}
+.img-logo {
+  color: white;
+}
+
+.contact-info {
+  width: 100%;
+  margin-bottom: 2em;
+  margin-left: 0;
+}
+.mytext-container {
+  width: 100%;
+}
+.social-info {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  margin: 0.5em 1em;
+}
+.h4 {
+  margin-bottom: 1em 20px;
+  color: white;
+  letter-spacing: 1.3px;
+  text-align: right;
+}
+.overlap {
+  max-width: 100%;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(103, 47, 47, 0.5), 0 0 20px rgba(255, 255, 255, 0.3),
+    0 0 30px rgba(255, 255, 255, 0.2);
+  margin-inline: auto;
+  padding: 6em;
+  position: relative;
+  z-index: 1;
+  margin-top: -2em;
+  margin-bottom: 2em;
+  top: 50px;
+}
+.overlap button {
+  width: 250px;
+  border-radius: 3rem;
+  height: 40px;
+  padding: 0 1em;
+  border: none;
+  background-color: u.$pink;
+  color: white;
+  font-weight: 700;
+  margin: 2.2em 0;
+  position: relative;
+}
+
+@media (min-width: 675px) {
+  .overlap {
+    max-width: 50%;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact-info {
+    width: 20%;
+  }
+  .about-me {
+    width: 20%;
+  }
+  .mytext-container {
+    width: 20%;
+  }
+  .social-info {
+    width: 10%;
+    justify-content: space-around;
+  }
+}

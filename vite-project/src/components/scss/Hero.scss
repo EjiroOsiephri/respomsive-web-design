@@ -1,0 +1,60 @@
+@use "./NavBar" as u;
+
+.mains-container {
+  background-image: url("../images/bg-hero-desktop.svg");
+  max-width: 100%;
+  display: block;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  padding: 0 2em;
+}
+.typography-container {
+  max-width: 100%;
+}
+.Hero-image > img {
+  width: 100%;
+}
+.typography-container button {
+  width: 250px;
+  border-radius: 3rem;
+  height: 40px;
+  padding: 0 1em;
+  border: none;
+  background-color: u.$pink;
+  color: white;
+  font-weight: 700;
+  margin: 2.2em 0;
+}
+button:hover,
+button:focus {
+  background-color: white;
+  color: u.$Very-Dark-Cyan;
+  font-weight: 800;
+}
+.typography-container h1 {
+  color: u.$Very-Dark-Cyan;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+.typography-container h2 {
+  color: u.$Grayish-Blue;
+  letter-spacing: 1.2px;
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 687px) {
+  .typography-container {
+    width: 30%;
+  }
+  .Hero-image {
+    width: 65%;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

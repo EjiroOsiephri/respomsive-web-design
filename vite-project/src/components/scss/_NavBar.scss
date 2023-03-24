@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$Very-Pale-Cyan: hsl(193, 100%, 96%);
+$Very-Dark-Cyan: hsl(192, 100%, 9%);
+$Grayish-Blue: hsl(208, 11%, 55%);
+$pink: hsl(322, 100%, 66%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 1em;
+  margin-bottom: 2.5em;
+}
+.navbar img {
+  margin-top: 0;
+  width: 100px;
+  height: fit-content;
+}
+.navbar button {
+  width: 120px;
+  border-radius: 3rem;
+  height: 25px;
+  background-color: white;
+  border: none;
+  color: $Very-Dark-Cyan;
+  font-weight: 800;
+  font-size: 0.8rem;
+  box-shadow: 0 0 10px rgba(103, 47, 47, 0.5), 0 0 20px rgba(255, 255, 255, 0.3),
+    0 0 30px rgba(255, 255, 255, 0.2);
+  padding: 0 1em;
+}
+@media (min-width: 687px) {
+  .navbar img {
+    width: 150px;
+    height: fit-content;
+  }
+  .navbar button {
+    width: 150px;
+    border-radius: 3rem;
+    height: 40px;
+  }
+}

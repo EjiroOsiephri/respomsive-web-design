@@ -1,0 +1,33 @@
+@use "./NavBar" as u;
+.main {
+  margin: 8em 0;
+}
+.main-container {
+  width: 80%;
+  box-shadow: 0 0 10px hsl(193, 100%, 96%), 0 0 20px hsl(193, 100%, 96%),
+    0 0 30px hsl(193, 100%, 96%);
+  padding: 2em 1em;
+  margin: 0 auto;
+  margin-bottom: 5em;
+}
+
+.main-text-container h1 {
+  font-size: 20px;
+  color: u.$Very-Dark-Cyan;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+.main-text-container {
+  margin: 1.5em 0;
+}
+.main-text-container h3 {
+  font-size: 14px;
+  margin-top: 4.5em;
+  color: u.$Grayish-Blue;
+  letter-spacing: 1.3px;
+}
+@media (min-width: 675px) {
+  .main-container {
+    display: flex;
+  }
+}
